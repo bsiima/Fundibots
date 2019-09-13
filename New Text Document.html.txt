@@ -1,0 +1,164 @@
+
+admin@DESKTOP-3KJBCHV MINGW64 ~/Desktop/git (master)
+$ git remote add origin "https://github.com/bsiima/Fundibots.git"
+fatal: remote origin already exists.
+
+admin@DESKTOP-3KJBCHV MINGW64 ~/Desktop/git (master)
+$ git pull origin master
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/bsiima/Fundibots
+ * branch            master     -> FETCH_HEAD
+ * [new branch]      master     -> origin/master
+
+admin@DESKTOP-3KJBCHV MINGW64 ~/Desktop/git (master)
+$ git push origin master
+Everything up-to-date
+
+admin@DESKTOP-3KJBCHV MINGW64 ~/Desktop/git (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        New Microsoft Word Document.docx
+        New Text Document.html.txt
+        New.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+admin@DESKTOP-3KJBCHV MINGW64 ~/Desktop/git (master)
+$ git add .
+
+admin@DESKTOP-3KJBCHV MINGW64 ~/Desktop/git (master)
+$ git commit -m"this is the best"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'admin@DESKTOP-3KJBCHV.(none)')
+
+admin@DESKTOP-3KJBCHV MINGW64 ~/Desktop/git (master)
+$ git config --global nuwabrenda@gmail.com
+error: invalid key: nuwabrenda@gmail.com
+
+admin@DESKTOP-3KJBCHV MINGW64 ~/Desktop/git (master)
+$  git config --global user.email "you@example.com"
+
+admin@DESKTOP-3KJBCHV MINGW64 ~/Desktop/git (master)
+$ git config --global user.email "nuwabrenda@gmail.com"
+
+admin@DESKTOP-3KJBCHV MINGW64 ~/Desktop/git (master)
+$ git config --global user.name "bsiima"
+
+admin@DESKTOP-3KJBCHV MINGW64 ~/Desktop/git (master)
+$ git commit -m"this is the best"
+[master ce77bd0] this is the best
+ 3 files changed, 1 insertion(+)
+ create mode 100644 New Microsoft Word Document.docx
+ create mode 100644 New Text Document.html.txt
+ create mode 100644 New.txt
+
+admin@DESKTOP-3KJBCHV MINGW64 ~/Desktop/git (master)
+$ git add .
+
+admin@DESKTOP-3KJBCHV MINGW64 ~/Desktop/git (master)
+$ git push origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 409 bytes | 81.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0)
+To https://github.com/bsiima/Fundibots.git
+   74b4796..ce77bd0  master -> master
+
+admin@DESKTOP-3KJBCHV MINGW64 ~/Desktop/git (master)
+$ git branch fundigirls
+
+admin@DESKTOP-3KJBCHV MINGW64 ~/Desktop/git (master)
+$ git checkout fundigirls
+Switched to branch 'fundigirls'
+
+admin@DESKTOP-3KJBCHV MINGW64 ~/Desktop/git (fundigirls)
+$ git status
+On branch fundigirls
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   New Microsoft Word Document.docx
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        ffg.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+admin@DESKTOP-3KJBCHV MINGW64 ~/Desktop/git (fundigirls)
+$ git add .
+
+admin@DESKTOP-3KJBCHV MINGW64 ~/Desktop/git (fundigirls)
+$ git checkout master
+Switched to branch 'master'
+M       New Microsoft Word Document.docx
+A       ffg.txt
+
+admin@DESKTOP-3KJBCHV MINGW64 ~/Desktop/git (master)
+$  git checkout fundigirls
+Switched to branch 'fundigirls'
+M       New Microsoft Word Document.docx
+A       ffg.txt
+
+admin@DESKTOP-3KJBCHV MINGW64 ~/Desktop/git (fundigirls)
+$ git add .
+
+admin@DESKTOP-3KJBCHV MINGW64 ~/Desktop/git (fundigirls)
+$ git status
+On branch fundigirls
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   New Microsoft Word Document.docx
+        new file:   ffg.txt
+
+
+admin@DESKTOP-3KJBCHV MINGW64 ~/Desktop/git (fundigirls)
+$ git commit -m" the branch is made"
+[fundigirls 8b97a75]  the branch is made
+ 2 files changed, 68 insertions(+)
+ create mode 100644 ffg.txt
+
+admin@DESKTOP-3KJBCHV MINGW64 ~/Desktop/git (fundigirls)
+$ git push origin fundigirls
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 9.45 KiB | 9.45 MiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'fundigirls' on GitHub by visiting:
+remote:      https://github.com/bsiima/Fundibots/pull/new/fundigirls
+remote:
+To https://github.com/bsiima/Fundibots.git
+ * [new branch]      fundigirls -> fundigirls
+
+admin@DESKTOP-3KJBCHV MINGW64 ~/Desktop/git (fundigirls)
+$ git checkout master
+Switched to branch 'master'
+
+admin@DESKTOP-3KJBCHV MINGW64 ~/Desktop/git (master)
+$
