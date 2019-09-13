@@ -1,0 +1,68 @@
+
+admin@DESKTOP-3KJBCHV MINGW64 ~/Desktop/git (master)
+$ git remote add origin "https://github.com/bsiima/Fundibots.git"
+fatal: remote origin already exists.
+
+admin@DESKTOP-3KJBCHV MINGW64 ~/Desktop/git (master)
+$ git pull origin master
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/bsiima/Fundibots
+ * branch            master     -> FETCH_HEAD
+ * [new branch]      master     -> origin/master
+
+admin@DESKTOP-3KJBCHV MINGW64 ~/Desktop/git (master)
+$ git push origin master
+Everything up-to-date
+
+admin@DESKTOP-3KJBCHV MINGW64 ~/Desktop/git (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        New Microsoft Word Document.docx
+        New Text Document.html.txt
+        New.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+admin@DESKTOP-3KJBCHV MINGW64 ~/Desktop/git (master)
+$ git add .
+
+admin@DESKTOP-3KJBCHV MINGW64 ~/Desktop/git (master)
+$ git commit -m"this is the best"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'admin@DESKTOP-3KJBCHV.(none)')
+
+admin@DESKTOP-3KJBCHV MINGW64 ~/Desktop/git (master)
+$ git config --global nuwabrenda@gmail.com
+error: invalid key: nuwabrenda@gmail.com
+
+admin@DESKTOP-3KJBCHV MINGW64 ~/Desktop/git (master)
+$  git config --global user.email "you@example.com"
+
+admin@DESKTOP-3KJBCHV MINGW64 ~/Desktop/git (master)
+$ git config --global user.email "nuwabrenda@gmail.com"
+
+admin@DESKTOP-3KJBCHV MINGW64 ~/Desktop/git (master)
+$ git config --global user.name "bsiima"
+
+admin@DESKTOP-3KJBCHV MINGW64 ~/Desktop/git (master)
+$ git commit -m"this is the best"
+[master ce77bd0] this is the best
+ 3 files changed, 1 insertion(+)
+ create mode 100644 New Microsoft Word Document.docx
